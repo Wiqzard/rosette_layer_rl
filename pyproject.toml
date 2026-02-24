@@ -1,0 +1,19 @@
+[project]
+name = "rl-rosetta-layer"
+version = "0.1.0"
+description = "Single-frozen-layer RL experiment prototype"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
